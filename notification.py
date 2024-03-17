@@ -17,8 +17,8 @@ def tmessage(message):
     Parameters:
         message (string): wanted message
     """
-    token = '5202557812:AAHCUQSF2CKv7GPLx-4M3wX9I-TcKnkuf7Q'
-    chat_id = '-1001274412957'
+    token = ''
+    chat_id = '-'
     bot = telegram.Bot(token=token)
     bot.sendMessage(chat_id=chat_id, text=message)
 
@@ -30,8 +30,8 @@ def tpic(path):
     Parameters:
         path (string): path to image file
     """
-    token = '5202557812:AAHCUQSF2CKv7GPLx-4M3wX9I-TcKnkuf7Q'
-    chat_id = '-1001274412957'
+    token = ''
+    chat_id = ''
     bot = telegram.Bot(token=token)
     bot.send_photo(chat_id=chat_id, photo=open(path, 'rb'))
 
